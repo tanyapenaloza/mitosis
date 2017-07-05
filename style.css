@@ -1,0 +1,462 @@
+@charset "utf-8";
+*{
+    margin:0;
+    padding:0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+
+    font-family: 'Raleway', sans-serif;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+    background: #D7E0E2;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* overflow: hidden; */
+}
+#notebook{
+    width: 1400px;
+    height:900px;
+    position: absolute;
+    left: calc(50% - 700px);
+    top: calc(50% - 450px);
+
+}
+#spirals{
+    z-index: 1;
+    position: absolute;
+    left: calc(50% - 631.5px)  ;
+    top: 10%;  
+}
+
+/* PAGES */
+.page{
+    width: 1350px;
+    height: 800px;
+    background: #EFEFEF;
+    position: absolute;
+    left: calc(50% - 675px);
+    top: calc(50% - 400px);
+}
+.inner-page{
+    width: 1350px;
+    height: 800px;
+    background: #EFEFEF;
+    position: absolute;
+    top:0px;
+    right: -1350px;
+}
+.wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+   /* overflow: hidden; */
+}
+
+/* TITILE PAGE */
+#title{
+    width: 1350px;
+    height: 800px;
+    text-align: center;
+
+}
+#title h2{
+    font-size: 60px;
+    padding-top: 140px;
+    font-family: 'Kalam', cursive;
+}
+#title h1{
+    font-size: 150px;
+    letter-spacing: 10px;
+}
+.text{
+    padding: 140px 0 0 0;
+}
+.design{
+    position: absolute;
+
+}
+#pencil{
+    right:-5%;
+    top: 40%;
+    transform: rotate(30deg);
+}
+#highlighter{
+    left: -3%;
+    top: 16%;
+}
+
+
+/* INSTRUCTIONS */
+.instruction{
+    font-size: 25px;
+    color: #707070;
+    letter-spacing: 1px;
+    position: absolute;
+}
+#cycle-instruction{
+    width: 600px;
+    left: calc(50% - 300px);
+    bottom: 2%;
+}
+
+
+/* START BUTTON */
+.button{
+    background: #FEC4C1;
+    box-sizing: border-box;  
+    position: absolute;
+}
+#start{
+    width: 220px;
+    height: 90px;
+    padding-top: 20px;
+    top: 60%;
+    left: calc(50% - 110px);
+    border-radius: 100px;
+    letter-spacing: 10px;
+    font-size: 40px;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* BACK BUTTON */
+#back{
+    width: 120px;
+    height: 50px;
+    top: 10%;
+    left: 3%;
+    text-align: center;
+    padding-top: 13px;
+    border-radius:100px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    background: rgba(254,196,193,0.4);
+}
+
+
+/* FOR ANICOLLECTION */
+#cycle-page.start{
+    transform: translateY(-800px);
+}
+#cycle-page.hide{
+    transform: translateY(800px);
+    transform:translateX(-1350px);
+}
+#interphase-page.phase{
+    transform: translateX(-1350px);
+}
+#cycle-page{
+    transition: all 0.5s cubic-bezier(0.15, 0.41, 0.56, 1.04);
+}
+#interphase-page{
+    transition: all 0.5s cubic-bezier(0.15, 0.41, 0.56, 1.04);
+}
+
+/* PAGE */
+.page{
+    width: 1350px;
+    height: 800px;
+    float: left;
+    position: relative;
+    /* disregards the padding */
+    box-sizing: border-box;
+    background: #fff;
+}
+
+
+
+/* NEXT - PREV ICONS */
+.next{
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    background: #FEC4C1;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    right: 2%;
+    bottom: 2%
+}
+.prev{
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    background: #FEC4C1;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 2%;
+    bottom: 2%
+}
+.next-prev i{
+    padding: 13px 0 0 17px;
+}
+
+
+
+
+/* CELL CYCLE PAGE */
+.cycle-cell{
+    background: #fff;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+}
+.arrow{
+    position: absolute;
+    top: calc(50% - 17.5px);
+    display: none;
+}
+#cycle-title{
+    margin-top: 30px;
+}
+.cycle-title{
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    text-align:center;
+}
+.cycle{
+    width: 190px;
+    height: 300px;
+    float:left;
+    position:relative;
+}
+.cycle .cycle-cell{
+    margin-top: 20px;
+    left: calc(50% - 75px);
+}
+#pro-cycle{
+    position: absolute;
+    left:3%;
+    top: 40%;
+}
+#ana-cycle{
+    position: absolute;
+    left: 23%;
+    top: 34%;
+}
+#meta-cycle{
+    position:absolute;
+    left: calc(50% - 95px);
+    top: 30%;
+}
+#telo-cycle{
+    position: absolute;
+    top: 34%;
+    right: 24%;
+}
+#cyto-cycle{
+    position:absolute;
+    right:5%;
+    top: 40%;
+}
+#arc{
+    width: 1350px;
+    height: 420px;
+    background: url(../images/arc.png);
+    margin-top: 60px;
+}
+
+
+
+
+/* DUMMY CELL */
+.cell{
+    width: 400px;
+    height: 400px;
+    background: #FEC4C1;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 200px);
+    top: 30%;
+}
+
+
+
+/* PROPHASE PAGE */
+.title{
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.text-content{
+    font-family: 'Kalam', cursive;
+    font-size: 22px;
+    width: 30%;
+    position: absolute;
+}
+p{
+    padding: 10px 0;
+    line-height: 120%;
+}
+#pro-cell{
+    top: 36%;
+}
+#pro-content1{
+    left: calc(50% - 500px);
+    top: 15%;
+    text-align: center;
+    width: 1000px;
+    font-size: 25px;
+    line-height: 1.3;
+}
+#pro-content2 /* what happens? */{
+    font-size: 28px;
+    text-align: center;
+    width: 400px;
+    left: calc(50% - 200px);
+    top: 25%;
+}
+#pro-content3 /* 1 */{
+    top: 35%;
+    left: 9%;
+}
+#pro-content4 /* 2 */{
+    top: 44%;
+    left: 3%;
+}
+#pro-content5 /* 3 */{
+    top: 73%;
+    left: 6%;
+}
+#pro-content6 /* 4 */{
+    right: 5%;
+    top: 35%;
+}
+#pro-content7 /* 5 */{
+    right:0;
+    top: 53%;
+}
+#pro-content8 /* 6 */{
+    right: 3%;
+    top: 70%;
+}
+
+
+
+/* ANAPHASE PAGE */
+#ana-content1{
+    left: calc(50% - 350px);
+    text-align: center;
+    width: 700px;
+    top: 17%;
+}
+#ana-content2{
+    top: 50%;
+    left: 8%;
+    width: 350px;
+}
+#ana-content3{
+    right:3%;
+    top: 47%;
+    width: 380px;
+}
+
+/* METAPHASE PAGE */
+#meta-content1{
+    left: calc(50% - 350px);
+    text-align: center;
+    width: 700px;
+    top: 17%;
+}
+#meta-content2{
+    top: 45%;
+    left: 4%;
+    width: 380px;
+}
+#meta-content3{
+    right:2%;
+    top: 45%;
+}
+
+/* TELOPHASE PAGE */
+#telo-content1{
+    left: calc(50% - 350px);
+    text-align: center;
+    width: 700px;
+    top: 17%;
+}
+#telo-content2{
+    left:0;
+    top: 47%;
+}
+#telo-content3{
+    right:0;
+    top: 47%;
+}
+#telo-content4{
+    bottom:4%;
+    width: 500px;
+    left: calc(50% - 250px);
+    text-align:center;
+}
+/* CYTOKINESIS PAGE */
+#cyto-content1{
+    left: calc(50% - 350px);
+    text-align: center;
+    width: 700px;
+    top: 16%;
+}
+
+.cyto{
+    width: 600px;
+    height: 600px
+    position: relative;
+    float: left;
+    text-align: center;
+}
+.cyto .text-content{
+    width: 500px;
+    position:absolute;
+    left: calc(50% - 250px);
+}
+.cyto .cell{
+    position: relative;
+    width: 320px;
+    height: 320px;
+}
+#plant-cyto-cell{
+    margin: 0 0 20px 40px;
+}
+#animal-cyto-cell{
+    margin: 0 0 20px 30px;
+}
+#animal-cyto{
+    position: absolute;
+    left: 4%;
+    bottom: 27%;
+}
+#plant-cyto{
+    position:absolute;
+    right:4%;
+    bottom:27%;
+}
+
+#cyto-content4{
+    top:33%;
+    left: calc(50% - 115px);
+    width: 230px;
+    text-align:center;
+}
+
+
+/* QUIZ PAGE */
+
+
