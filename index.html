@@ -1,0 +1,367 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Phases of Mitosis 2</title>
+
+<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+<!-- STYLESHEETS -->
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Kalam|Raleway" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<section>
+	
+    <div class="container">
+    	<div class="design" id="highlighter"><img src="images/highlighter.png" alt=""/></div>
+        <div class="design" id="pencil"><img src="images/pencil.png" alt=""/></div>
+      	<div id="spirals"><img src="images/spirals.png" alt=""/></div>
+    	<div id="notebook">
+        	<div class="page">
+            	<div class="wrapper">
+                	
+<!-- TITLE -->
+                    <div id="title">
+                    		<h2>The phases of</h2>
+                        	<h1>MITOSIS</h1>
+                        
+                        <!-- START BUTTON -->
+                        <div class="button" id="start">
+                        	<a href="#" data-anijs="if: click, do: $addClass start, to: #cycle-page">start</a>
+                        </div>
+                    </div>
+                    
+<!-- PAGES -->
+                        
+                   	<!-- CYCLE -->
+                        <div class="page" id="cycle-page">
+                        	<!-- BACK BUTTON -->
+                        	<div class="button" id="back">
+                        		<a href="#">back</a>
+                        	</div>
+                        	<div id="cycle">
+                            	<div class="content">
+                                	<div class="title" id="cycle-title">Mitosis : Cell Cycle</div>
+                                    
+                                    <div class="cycle" id="pro-cycle">
+                                    	<div class="cycle-title" id="pro-cycle-title">PROPHASE</div>
+                            			<div class="cycle-cell" id="pro-cycle-cell"
+                                        	data-anijs="if: click, do: $addClass hide, to: #cycle-page;
+                                        				if: click, do: $addClass phase, to: #interphase-page"></div>
+                                    	<div class="arrow" id="arrow-1"><img src="images/arrow.png" alt=""/></div>
+                                    </div>
+                                    
+                                    <div class="cycle" id="ana-cycle">
+                                    	<div class="cycle-title" id="ana-cycle-title">ANAPHASE</div>    
+                                		<div class="cycle-cell" id="ana-cycle-cell"
+                                        	data-anijs="if: click, do: $addClass hide, to: #interphase-page;
+                                        				if: click, do: $addClass phase, to: #anaphase-page"></div>
+                                    	<div class="arrow" id="arrow-2"><img src="images/arrow.png" alt=""/></div>
+                                    </div>
+                                    
+                                    <div class="cycle" id="meta-cycle">
+                                    	<div class="cycle-title" id="meta-cycle-title">METAPHASE</div>    
+                                		<div class="cycle-cell" id="meta-cycle-cell"></div>
+                                    	<div class="arrow" id="arrow-3"><img src="images/arrow.png" alt=""/></div>
+                                    </div>
+                                    
+                                    <div class="cycle" id="telo-cycle">
+                                    	<div class="cycle-title" id="telo-cycle-title">TELPOPHASE</div>        
+                                		<div class="cycle-cell" id="telo-cycle-cell"></div>
+                                    	<div class="arrow" id="arrow-4"><img src="images/arrow.png" alt=""/></div>
+                                    </div>
+                                    
+                                    <div class="cycle" id="cyto-cycle">
+                                    	<div class="cycle-title" id="cyto-cycle-title">CYTOKINESIS</div>    
+                                		<div class="cycle-cell" id="cyto-cycle-cell"></div>
+                                    </div>
+                                    
+                                    <div id="arc"></div>
+                                    <div class="instruction" id="cycle-instruction">
+                                    	* Click on a cell you want to learn more about *
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                    <!-- INTERPHASE -->
+                        <div class="inner-page" id="interphase-page">
+                        	<div class="cell" id="int-cell">
+                            
+                            </div>
+                            
+                            <!-- INTER CONTENT -->
+                            <div class="content">
+                            	<div class="title" id="int-title">INTERPHASE</div>
+                                
+                          		<div class="text-content" id="int-content">The cell starts to break down and build up structures to set the stage for division of the chromosomes. The mitotic spindle begins to capture and organize the chromosomes.</div>
+                                
+                                <div class="text-content" id="int-content2">
+                                	<article>
+                                    	
+                                    </article>
+                                </div>
+                            </div>
+                            
+                            <!-- NEXT-PREV -->
+                            <div class="next-prev">
+                        		<div class="next">
+                            		<i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            	</div>
+                          	</div>
+                        </div>
+                             
+                   	<!-- PROPHASE -->
+                        <div class="inner-page" id="prophase-page">
+                        	<div class="cell" id="pro-cell">
+                            
+                            </div>
+                            
+                            <!-- PRO CONTENT -->
+                            <div class="content">
+                            	<div class="title" id="pro-title">PROPHASE</div>
+                                
+                          		<div class="text-content" id="pro-content1">The cell starts to break down and build up structures to set the stage for division of the chromosomes. The mitotic spindle begins to capture and organize the chromosomes.</div>
+                                
+                                <div class="text-content" id="pro-content2">
+                                    	<h2>What happens?</h2>
+                                </div>
+                                
+                                <div class="text-content" id="pro-content3">
+                                	<p>1. The chromosomes start to condense.</p>
+                                </div>
+                                
+                                <div class="text-content" id="pro-content4">
+                                	<p>2. The mitotic spindle begins to form. The spindle is a structure made of microtubules, strong fibers that are part of the cell’s “skeleton.” Its job is to organize the chromosomes and move them around during mitosis. The spindle grows between the centrosomes as they move apart.</p>
+                                </div>
+                                
+                                <div class="text-content" id="pro-content5">
+                                	<p>3. The nucleolus (or nucleoli, plural), a part of the nucleus where ribosomes are made, disappears.</p>
+                                </div>
+                                
+                                <div class="text-content" id="pro-content6">
+                                	 <p>4. The chromosomes finish condensing, so they are very compact.</p>
+                                </div>
+                                
+                                <div class="text-content" id="pro-content7">
+                                	 <p>5. The nuclear envelope breaks down, releasing the chromosomes.</p>
+                                </div>
+                                
+                                <div class="text-content" id="pro-content8">
+                                	 <p>6. The mitotic spindle grows more, and some of the microtubules start to “capture” chromosomes.</p>
+                                </div>   
+                                
+                            </div>
+                            
+                            <!-- NEXT-PREV -->
+                            <div class="next-prev">
+                        		<div class="next">
+                            		<i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            	</div>
+                                
+                                <div class="prev">
+                            		<i class="fa fa-arrow-left" aria-hidden="true"></i>
+                            	</div>
+                          	</div>
+                        </div>
+                        
+                   	<!-- ANAPHASE -->
+                        <div class="inner-page" id="anaphase-page">
+                        	<div class="cell" id="ana-cell">
+                            
+                            </div>
+                            
+                            <!-- ANA CONTENT -->
+                            <div class="content">
+                            	<div class="title" id="ana-title">ANAPHASE</div>
+                          		<div class="text-content" id="ana-content1">The spindle has captured all the chromosomes and lined them up at the middle of the cell, ready to divide.</div>
+                                <div class="text-content" id="ana-content2">
+                                	<p>1. All the chromosomes align at plane called the metaphase plate</p>
+                                </div>
+								<div class="text-content" id="ana-content3">
+									<p>2. The two kinetochores of each chromosome should be attached to microtubules from opposite spindle poles.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- NEXT-PREV -->
+                            <div class="next-prev">
+                        		<div class="next">
+                            		<i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            	</div>
+                            	<div class="prev">
+                            		<i class="fa fa-arrow-left" aria-hidden="true"></i>
+                            	</div>
+                          	</div>
+                        </div>
+                        
+                        
+                   	<!-- METAPHASE -->
+                        <div class="inner-page" id="mataphase-page">
+                        	<div class="cell" id="meta-cell">
+                            
+                            </div>
+                            
+                            <!-- META CONTENT -->
+                            <div class="content">
+                            	<div class="title" id="meta-title">METAPHASE</div>
+                          		<div class="text-content" id="meta-content1">The sister chromatids separate from each other and are pulled towards opposite ends of the cell.</div>
+                                <div class="text-content" id="meta-content2">
+                                    <p>1. protein “glue” that holds the sister chromatids together is broken down, allowing them to separate. Each is now its own chromosome. The chromosomes of each pair are pulled towards opposite ends of the cell.</p>
+                                </div>
+                                
+								<div class="text-content" id="meta-content3">
+									<p>2. Microtubules not attached to chromosomes elongate and push apart, separating the poles and making the cell longer.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- NEXT-PREV -->
+                            <div class="next-prev">
+                        		<div class="next">
+                            		<i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            	</div>
+                            	<div class="prev">
+                            		<i class="fa fa-arrow-left" aria-hidden="true"></i>
+                            	</div>
+                          	</div>
+                        </div>
+                        
+                        
+                 	<!-- TELOPHASE -->
+                        <div class="inner-page" id="telophase-page">
+                        	<div class="cell" id="telophase-cell">
+                            
+                            </div>
+                            
+                            <!-- TELO CONTENT -->
+                            <div class="content">
+                            	<div class="title" id="telo-title">TELOPHASE</div>
+                          		<div class="text-content" id="telo-content1">The cell is nearly done dividing, and it starts to re-establish its normal structures as cytokinesis (division of the cell contents) takes place.</div>
+                                <div class="text-content" id="telo-content2">
+                                    <p>1. The mitotic spindle is broken down into its building blocks.</p>
+								</div>
+                                <div class="text-content" id="telo-content3">
+									<p>2. Two new nuclei form, one for each set of chromosomes. Nuclear membranes and nucleoli reappear.</p>
+								</div>
+                                <div class="text-content" id="telo-content4">
+									<p>3. The chromosomes begin to decondense and return to their “stringy” form.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- NEXT-PREV -->
+                            <div class="next-prev">
+                        		<div class="next">
+                            		<i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            	</div>
+                            	<div class="prev">
+                            		<i class="fa fa-arrow-left" aria-hidden="true"></i>
+                            	</div>
+                          	</div>
+                        </div>
+                        
+                        
+                  	<!-- CYTOKINESIS -->
+                        <div class="inner-page" id="cytokinesis-page">
+                            
+                            <!-- CYTO CONTENT -->
+                            <div class="content">
+                            	<div class="title" id="cyto-title">CYTOKINESIS</div>
+                          		<div class="text-content" id="cyto-content1">The division of the cytoplasm to form two new cells, overlaps with the final stages of mitosis.</div>					
+                                <!-- ANIMAL CELL -->
+                                <div class="cyto" id="animal-cyto">
+                                	<div class="cell" id="animal-cyto-cell"></div>
+                                    
+                                    <div class="text-content" id="cyto-content2">
+                                    	In animal cells, cytokinesis is contractile, pinching the cell in two like a coin purse with a drawstring. The “drawstring” is a band of filaments made of a protein called actin, and the pinch crease is known as the cleavage furrow.
+									</div>
+                            	</div>
+                                
+                                
+                                <!-- PLANT CELL -->
+                                <div class="cyto" id="plant-cyto">
+                                	<div class="cell" id="plant-cyto-cell"></div>
+                                    
+                                    <div class="text-content" id="cyto-content3">
+                                		Plant cells can’t be divided like this because they have a cell wall and are too stiff. Instead, a structure called the cell plateforms down the middle of the cell, splitting it into two daughter cells separated by a new wall.
+                                	</div>
+                            	</div>
+                            		
+                                	
+                                
+                                <div class="text-content" id="cyto-content4">When cytokinesis finishes, we end up with two new cells, each with a complete set of chromosomes identical to those of the mother cell. </div>					
+                            
+                            <!-- NEXT-PREV -->
+                            
+                        		<div class="next-prev">
+                                	<div class="next">
+                            			<i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            		</div>
+                        			<div class="prev">
+                            			<i class="fa fa-arrow-left" aria-hidden="true"></i>
+                            		</div>
+                          		</div>
+                                
+                                
+                           	</div>
+                        </div>
+                        
+                        
+                   	<!-- QUIZ -->
+                        <div class="inner-page" id="quiz-page">
+                        	<div class="quiz">
+                            	<div class="title" id="quiz-title">Quiz Time!</div>
+                            	<!-- Q&A 1 -->
+                            	<div class="question" id="question-1"></div>
+                                
+                                <div class="choices" id="choice-1">
+                                	<div class="answer" id="answer-1.1">Cytokinesis</div>
+                                	<div class="answer" id="answer-1.2">Anaphase</div>
+                                	<div class="answer" id="answer-1.3">Prophase</div>
+                                </div>
+                                <div class="correct" id="correct-1">
+                                
+                                </div>
+                                
+                                <!-- Q&A 2 -->
+                                <div class="question" id="question-2"></div>
+                                
+                                <div class="choices" id="choice-2">
+                                	<div class="answer" id="answer-2.1">Anaphase</div>
+                                	<div class="answer" id="answer-2.2">Telophase</div>
+                                	<div class="answer" id="answer-2.3">Metaphase</div>
+                                </div>
+                                <div class="correct" id="correct-2">
+                                
+                                </div>
+                                
+                                <!-- Q&A 1 -->
+                                <div class="question" id="question-3"></div>
+                                
+                                <div class="choices" id="choice-3">
+                                	<div class="answer" id="answer-3.1">Prophase</div>
+                                	<div class="answer" id="answer-3.2">Telophase</div>
+                                	<div class="answer" id="answer-3.3">Cytokinesis</div>
+                                </div>
+                                <div class="correct" id="correct-3">
+                                
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    	
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+	<!-- JQUERY -->
+    <script src="js/anijs-min.js"></script>
+    <script src="js/anijs-helper-dom-min.js"></script>
+</body>
+</html>
